@@ -1,22 +1,28 @@
-export interface Stone3PLResponse<T> {
-  code: string;
-  message: string;
-  data: T;
+export interface Stone3PLTokenResponse {
+  error_code: number;
+  msg: string;
+  data: {
+    accessToken: string;
+    expiresIn: number; // seconds
+  };
 }
 
 export interface Stone3PLInventoryItem {
   sku: string;
-  goods_name: string;
-  warehouse_id: string;
+  product_name: string;
   available_qty: number;
   on_hand_qty: number;
-  lock_qty: number;
-  update_time?: string;
+  locked_qty: number;
+  updated_at?: string;
 }
 
 export interface Stone3PLInventoryData {
   list: Stone3PLInventoryItem[];
   total: number;
-  page: number;
-  page_size: number;
+}
+
+export interface Stone3PLResponse<T> {
+  error_code: number;
+  msg: string;
+  data: T;
 }

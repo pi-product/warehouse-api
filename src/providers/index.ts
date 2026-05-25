@@ -2,7 +2,6 @@ import { ShipBobProvider } from "./shipbob/client.js";
 import { Stone3PLProvider } from "./stone3pl/client.js";
 import { ShipMonkProvider } from "./shipmonk/client.js";
 import { ShipTopProvider } from "./shiptop/client.js";
-import { ChinaDivisionProvider } from "./chinadivision/client.js";
 import type { WarehouseProvider } from "./base.js";
 import type { WarehouseId } from "../types/inventory.js";
 
@@ -11,7 +10,6 @@ const all: WarehouseProvider[] = [
   new ShipBobProvider(),
   new ShipMonkProvider(),
   new ShipTopProvider(),
-  new ChinaDivisionProvider(),
 ];
 
 export function getProviders(ids?: WarehouseId[]): WarehouseProvider[] {
