@@ -1,0 +1,27 @@
+{
+  "name": "warehouse-api",
+  "version": "1.0.0",
+  "description": "Unified inventory API for Stone3PL, ShipBob, ShipMonk, and ShipTop",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "tsx watch src/server.ts",
+    "lint": "eslint src --ext .ts",
+    "test": "jest"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.2",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.4",
+    "tsx": "^4.15.5",
+    "typescript": "^5.4.5"
+  }
+}
