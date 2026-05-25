@@ -1,4 +1,4 @@
-export type WarehouseId = "stone3pl" | "shipbob" | "shipmonk" | "shiptop";
+export type WarehouseId = "stone3pl" | "shipbob" | "shipmonk" | "shiptop" | "chinadivision";
 
 export interface InventoryItem {
   sku: string;
